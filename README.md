@@ -33,3 +33,21 @@ python3 -m venv venv && source venv/bin/activate
 
 # install dependencies
 pip install -r requirements.txt
+
+# 1. Clone repo
+git clone https://github.com/VineethSct2012/Vineeth_HackKP2025.git
+cd Vineeth_HackKP2025
+
+# 2. Create Python environment
+python3 -m venv venv
+source venv/bin/activate    # On Windows use: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run Task 1 (example)
+python task1_metadata_analysis/code/run.py --input task1_metadata_analysis/sample_input/test.jpg --output task1_metadata_analysis/sample_output/report.json
+
+⚠️ Note: For OCR features (English + Malayalam), please install Tesseract OCR engine:
+- Linux: sudo apt-get install tesseract-ocr tesseract-ocr-mal
+- Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
